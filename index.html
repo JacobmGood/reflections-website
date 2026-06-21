@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reflections — interactive video feedback fractals for iOS. Drag, pinch, and rotate to create mesmerizing black-and-white patterns.">
+  <title>Reflections — Street Tribe</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/icon.png" type="image/png">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="navbar-toolbar">
+      <a href="https://streettribe.ca/" class="brand" target="_blank" rel="noopener">
+        <img src="assets/street-tribe-logo.png" alt="Street Tribe" class="brand-logo" width="230" height="63">
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#screenshots">Screenshots</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#details">Details</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+        <svg class="nav-menu-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-drawer-overlay" aria-hidden="true"></div>
+
+  <aside class="nav-drawer" id="nav-drawer" aria-hidden="true" aria-label="Mobile navigation">
+    <div class="drawer-header">
+      <div class="drawer-logo-placeholder" aria-hidden="true"></div>
+    </div>
+    <nav class="nav-drawer-nav">
+      <a href="#overview">Overview</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#details">Details</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </aside>
+
+  <!-- Hero / Overview -->
+  <header class="hero" id="overview">
+    <img src="assets/icon.png" alt="Reflections app icon" class="hero-icon" width="120" height="120">
+    <div class="hero-meta">
+      <span class="category">Entertainment</span>
+      <h1>Reflections</h1>
+      <p class="developer">Jacob Good</p>
+      <p class="tagline">
+        Simulated video feedback on your iPhone. Move, pinch, and rotate two mirrored
+        rectangles to grow infinite black-and-white fractal patterns in real time.
+      </p>
+      <div class="hero-actions">
+        <span class="price-badge">Free</span>
+        <!-- Replace href with your App Store URL once live -->
+        <a href="#" class="btn-app-store coming-soon" aria-disabled="true">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Coming to App Store
+        </a>
+      </div>
+      <div class="warning-banner">
+        <span aria-hidden="true">⚠️</span>
+        <span><strong>Photosensitivity warning:</strong> Reflections displays rapidly changing, high-contrast patterns that may affect photosensitive viewers.</span>
+      </div>
+    </div>
+  </header>
+
+  <hr class="divider">
+
+  <!-- Screenshots -->
+  <section id="screenshots">
+    <p class="section-label">Screenshots</p>
+    <h2>See Reflections in action</h2>
+    <div class="device-tabs">
+      <button class="device-tab active" type="button">iPhone</button>
+    </div>
+    <div class="screenshot-grid">
+      <figure class="screenshot-frame">
+        <img src="assets/screenshot-1.png" alt="Reflections fractal pattern on iPhone" loading="lazy">
+      </figure>
+      <!-- Add more screenshots to assets/ and duplicate the figure above -->
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- About -->
+  <section id="about">
+    <p class="section-label">About</p>
+    <h2>About this app</h2>
+    <p>
+      Reflections recreates the optical magic of <strong>video feedback</strong> — the same
+      effect you get when a camera films its own output — entirely on your device using Metal
+      and GPU shaders.
+    </p>
+    <p style="margin-top: 1rem;">
+      Two mirrored rectangles feed a real-time feedback loop. Drag to move them, pinch to
+      resize, and rotate with two fingers to explore ever-changing fractal shapes inside each
+      window. Inspired by the discontinued <em>Fraconaro</em> app and the original
+      <a href="https://emielharmsen.com/portfolio/fraksl/" target="_blank" rel="noopener">Fraksl</a> concept.
+    </p>
+    <p style="margin-top: 1rem;">
+      Built as a creative coding project by
+      <a href="https://streettribe.ca/" target="_blank" rel="noopener">Street Tribe</a>.
+      No accounts, no ads, no data collection — just patterns.
+    </p>
+  </section>
+
+  <hr class="divider">
+
+  <!-- At a glance -->
+  <section>
+    <p class="section-label">At a glance</p>
+    <h2>Quick facts</h2>
+    <div class="glance-grid">
+      <div class="glance-card">
+        <p class="label">Price</p>
+        <p class="value">Free</p>
+      </div>
+      <div class="glance-card">
+        <p class="label">Version</p>
+        <p class="value">1.0</p>
+      </div>
+      <div class="glance-card">
+        <p class="label">Platform</p>
+        <p class="value">iOS</p>
+      </div>
+      <div class="glance-card">
+        <p class="label">Language</p>
+        <p class="value">English</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Reviews -->
+  <section id="reviews">
+    <p class="section-label">Ratings &amp; Reviews</p>
+    <h2>What people think</h2>
+    <div class="reviews-empty">
+      <p class="stars">★★★★★</p>
+      <p>Not yet on the App Store — reviews will appear here after launch.</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Details -->
+  <section id="details">
+    <p class="section-label">Information</p>
+    <h2>The details</h2>
+    <dl class="details-grid">
+      <dt>Provider</dt>
+      <dd>Jacob Good</dd>
+      <dt>Category</dt>
+      <dd>Entertainment</dd>
+      <dt>Version</dt>
+      <dd>1.0</dd>
+      <dt>Price</dt>
+      <dd>Free</dd>
+      <dt>Compatibility</dt>
+      <dd>iPhone, iOS 16+</dd>
+      <dt>Language</dt>
+      <dd>English</dd>
+      <dt>Support</dt>
+      <dd><a href="mailto:streettribe@outlook.com">streettribe@outlook.com</a></dd>
+    </dl>
+  </section>
+
+  <footer class="site-footer">
+    <p class="motto">All is art</p>
+    <nav class="footer-links">
+      <a href="https://streettribe.ca/" target="_blank" rel="noopener">Street Tribe</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="mailto:streettribe@outlook.com">Contact</a>
+    </nav>
+    <p class="footer-copy">© 2026 Jacob Good · Reflections, its name and icon are © Jacob Good</p>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>
