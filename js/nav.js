@@ -1,5 +1,5 @@
 /**
- * Street Tribe–style navbar: scroll shrink + mobile drawer.
+ * Scroll shrink mobile.
  */
 (function () {
   const navbar = document.querySelector('.navbar');
@@ -10,7 +10,7 @@
 
   if (!navbar) return;
 
-  // Scroll shrink (100px → 70px at scrollY >= 30)
+  // Scroll shrink
   function onScroll() {
     const scrolled = window.scrollY >= 30;
     navbar.classList.toggle('scrolled', scrolled);
