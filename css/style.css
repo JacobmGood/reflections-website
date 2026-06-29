@@ -545,6 +545,52 @@ section p {
   color: var(--text-muted);
 }
 
+/* Music */
+
+.music-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  max-width: 560px;
+}
+
+.music-card p {
+  margin-bottom: 1.5rem;
+}
+
+.music-card a:not(.btn-youtube) {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.music-card a:not(.btn-youtube):hover {
+  opacity: 0.85;
+}
+
+.btn-youtube {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #ff0000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: transform 0.15s, opacity 0.15s;
+}
+
+.btn-youtube:hover {
+  opacity: 0.92;
+  transform: scale(1.02);
+}
+
+.btn-youtube svg {
+  width: 20px;
+  height: 20px;
+}
+
 /* Reviews placeholder */
 
 .reviews-empty {
