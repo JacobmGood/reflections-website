@@ -383,6 +383,33 @@ a {
   transform: none;
 }
 
+.btn-testflight {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #0d96ff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: transform 0.15s, opacity 0.15s;
+}
+
+.btn-testflight:hover {
+  opacity: 0.92;
+  transform: scale(1.02);
+}
+
+.btn-testflight svg {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-testflight--compact {
+  margin-top: 1.25rem;
+}
+
 .warning-banner {
   display: flex;
   align-items: flex-start;
